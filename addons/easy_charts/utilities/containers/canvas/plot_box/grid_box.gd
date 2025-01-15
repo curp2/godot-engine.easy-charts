@@ -1,10 +1,10 @@
 extends Control
 class_name GridBox
 
-var x_domain: Dictionary = { lb = 0, ub = 0 }
+var x_domain: Dictionary = { lb = 0, ub = 0}
 var x_labels_function: Callable = Callable()
 
-var y_domain: Dictionary = { lb = 0, ub = 0 }
+var y_domain: Dictionary = { lb = 0, ub = 0}
 var y_labels_function: Callable = Callable()
 
 var box: Rect2

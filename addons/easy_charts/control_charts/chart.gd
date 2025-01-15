@@ -136,7 +136,7 @@ func calculate_domain(values: Array) -> Dictionary:
 	var min_max: Dictionary = ECUtilities._find_min_max(values)
 	
 	if not chart_properties.smooth_domain:
-		return { lb = min_max.min, ub = min_max.max, has_decimals = ECUtilities._has_decimals(values), fixed = false }
+		return { lb = min_max.min - 0.001, ub = min_max.max + 0.001, has_decimals = ECUtilities._has_decimals(values), fixed = false }
 	else:
 		return { lb = ECUtilities._round_min(min_max.min), ub = ECUtilities._round_max(min_max.max), has_decimals = ECUtilities._has_decimals(values) , fixed = false }
 
